@@ -1,0 +1,36 @@
+{
+  "name": "juego",
+  "plural": "juegos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "local": {
+      "type": "string"
+    },
+    "visitante": {
+      "type": "string"
+    },
+    "fecha": {
+      "type": "date"
+    },
+    "anotacionesLocal": {
+      "type": "number"
+    },
+    "anotacionesVisitante": {
+      "type": "number"
+    },
+    "jugadorDestacado": {
+      "type": "string"
+    },
+    "lugar": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

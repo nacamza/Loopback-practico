@@ -1,0 +1,58 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "mi_mongodb"
+  },
+  "AccessToken": {
+    "dataSource": "mi_mongodb",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "mi_mongodb",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "mi_mongodb",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "mi_mongodb",
+    "public": false
+  },
+  "equipo": {
+    "dataSource": "mi_mongodb",
+    "public": true
+  },
+  "jugador": {
+    "dataSource": "mi_mongodb",
+    "public": true
+  },
+  "juego": {
+    "dataSource": "mi_mongodb",
+    "public": true
+  },
+  "estadio": {
+    "dataSource": "mi_mysql",
+    "public": true
+  },
+  "Patrocinadores": {
+    "dataSource": "mi_mysql_2",
+    "public": true
+  }
+}
